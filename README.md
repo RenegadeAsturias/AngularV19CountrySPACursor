@@ -2,6 +2,34 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
 
+## Comandos Rápidos
+
+### Usando NPM Scripts
+```bash
+npm run dev          # Iniciar servidor de desarrollo
+npm run git:all      # Ejecutar flujo completo de Git
+npm run build:prod   # Construir para producción
+npm run clean        # Limpiar y reinstalar dependencias
+```
+
+### Usando PowerShell (cargar aliases)
+```powershell
+. .\aliases.ps1      # Cargar aliases
+git-flow             # Flujo completo de Git
+dev-flow             # Iniciar desarrollo
+cd-angular           # Navegar al proyecto
+```
+
+### Usando archivo batch
+```cmd
+comandos.bat dev     # Iniciar servidor de desarrollo
+comandos.bat git     # Flujo completo de Git
+comandos.bat build   # Construir proyecto
+comandos.bat test    # Ejecutar tests
+comandos.bat clean   # Limpiar proyecto
+comandos.bat cd      # Navegar al proyecto
+```
+
 ## Development server
 
 To start a local development server, run:
