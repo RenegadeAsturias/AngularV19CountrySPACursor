@@ -6,7 +6,8 @@ git add .
 git commit -m "Curso Angular: De cero a experto - Edición 2025 - Country SPA + Cursor" 
 git push -u origin main
 
->>> npm run git:all
+EJECUTAR !!!!!!!!!!!!!!!!!!!!!!!
+npm run git:all
 
 ## Comandos Rápidos con NPM Scripts
 
@@ -55,9 +56,28 @@ $ git clone https://github.com/RenegadeAsturias/AngularV19CountrySPACursor.git
 * Scripts creados en package.json para Git, desarrollo y mantenimiento
 * Comando principal: npm run git:all (reemplaza 3 comandos de Git)
 
+* Parece que cuando configuro las dimensiones de las ventanas no me está funcionando bien:
+* Se añaden estas tres líneas al fichero de configuración: tsconfig.json:
+  "window.restoreFullScreen": false,
+  "window.restoreWindows": "none",
+  "window.zoomLevel": 0
 
-
-
+* Se quedaría algo así el fichero:
+.... ..... .... .... ....
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "window": {
+    "restoreFullScreen": false,
+    "restoreWindows": "none",
+    "zoomLevel": 0
+  }
+}
 
 
 

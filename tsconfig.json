@@ -30,5 +30,10 @@
     {
       "path": "./tsconfig.spec.json"
     }
-  ]
+  ],
+  "window": {
+    "restoreFullScreen": false,
+    "restoreWindows": "none",
+    "zoomLevel": 0
+  }
 }

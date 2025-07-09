@@ -1,0 +1,33 @@
+# Configuración personalizada para Git Bash
+# Archivo: .gitbashrc
+
+# Alias para comandos de Git
+alias git-all='npm run git:all'
+alias git-add='npm run git:add'
+alias git-commit='npm run git:commit'
+alias git-push='npm run git:push'
+
+# Alias para desarrollo
+alias dev='npm run dev'
+alias start='npm start'
+alias build='npm run build'
+alias test='npm run test'
+
+# Alias para navegación
+alias cd-angular='cd /c/proyectoscursor/AngularV19CountrySPACursor'
+
+# Función para mostrar ayuda
+git-help() {
+    echo "=== Comandos disponibles ==="
+    echo "git-all     - Ejecuta: git add . + commit + push"
+    echo "git-add     - Solo: git add ."
+    echo "git-commit  - Solo: git commit"
+    echo "git-push    - Solo: git push"
+    echo "dev         - Inicia servidor de desarrollo"
+    echo "build       - Construye el proyecto"
+    echo "test        - Ejecuta tests"
+    echo "cd-angular  - Navega al proyecto"
+    echo "git-help    - Muestra esta ayuda"
+}
+
+echo "✅ Git Bash configurado. Usa 'git-help' para ver comandos disponibles."
