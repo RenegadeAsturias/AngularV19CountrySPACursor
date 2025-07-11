@@ -51,7 +51,7 @@ $ git clone https://github.com/RenegadeAsturias/AngularV19CountrySPACursor.git
 * 3-Se instala cursor
 * 4-Configuro mi cuenta de github
 
-****************************************************************** (11/07/2025)
+****************************************************************** (10/07/2025)
 * Configurando NPM Scripts para automatizar comandos repetitivos
 * Scripts creados en package.json para Git, desarrollo y mantenimiento
 * Comando principal: npm run git:all (reemplaza 3 comandos de Git)
@@ -78,6 +78,53 @@ $ git clone https://github.com/RenegadeAsturias/AngularV19CountrySPACursor.git
     "zoomLevel": 0
   }
 }
+
+****************************************************************** (11/07/2025)
+* Desde app creamos la siguiente estructura:
+cd src/app
+mkdir country
+cd country
+mkdir components
+mkdir pages
+mkdir services
+mkdir interfaces
+cd ..
+mkdir shared
+cd shared
+mkdir components
+mkdir pages
+
+* Creamos el componente: home-page en scr/app/shared/pages
+cd c:/proyectoscursor/AngularV19CountrySPACursor/src/app/shared/pages
+ng generate component home-page --skip-tests --inline-style
+
+* Creamos el componente: by-capital-page en scr/app/country/pages
+cd c:/proyectoscursor/AngularV19CountrySPACursor/src/app/country/pages
+ng generate component by-capital-page --skip-tests --inline-style
+
+* Configuramos el app.routes
+[
+  {
+    path: '',
+    component: HomePageComponent
+  },
+  /** 
+  {
+    path: 'country'
+    // Las rutas de country que no queremos que vengan aquí
+  }
+  */
+  {
+    path: '**',
+    redirectTo: ''
+  }
+]
+
+* Borramos todo lo que tiene el proyecto original en app.html
+* y dejamos solo
+<router-outlet />
+
+
 
 
 
