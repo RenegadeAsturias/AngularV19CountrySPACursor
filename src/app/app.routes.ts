@@ -6,12 +6,12 @@ export const routes: Routes = [
     path: '',
     component: HomePageComponent
   },
-  /**
   {
-    path: 'country'
-    // Las rutas de country que no queremos que vengan aquí
-  }
-  */
+    path: 'country',
+    // loadChildren: () => import('./country/country.routes').then(m => m.countryRoutes)
+    // añadimos: 'export default countryRoutes - para no tener que recorrer los countries
+    loadChildren: () => import('./country/country.routes')
+  },
   {
     path: '**',
     redirectTo: ''

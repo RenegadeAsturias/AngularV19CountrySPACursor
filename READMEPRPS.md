@@ -124,6 +124,27 @@ ng generate component by-capital-page --skip-tests --inline-style
 * y dejamos solo
 <router-outlet />
 
+****************************************************************** (12/07/2025)
+* Vamos a separar las rutas para que no estén todas
+* en el mismo fichero: src/app/app.routes.ts
+* Asi que vamos a crear un fichero en particular para las rutas
+* del módulo de countries: scr/app/country/country.routes.ts
+
+// Cargamos las rutas de country
+// Esta era la opción por defecto, utilizando lazy loading, pero se ve veo así:
+// loadChildren: () => import('./country/country.routes').then(m => m.countryRoutes)
+
+// Cargamos las rutas de country
+// Pero esta vez, vamos a utilizar Lazy loading también pero en lugar de recorrelos
+// Utilizaremos las siguiente forma, en nuestro: country.routes.ts 
+// añadimos: export default countryRoutes; 
+// para exportar la clase por defecto y así no hace falta recorrer las rutas y se queda:
+// loadChildren: () => import('./country/country.routes')
+
+loadChildren: () => import('./country/country.routes')
+
+****************************************************************** (13/07/2025)
+* continuar...
 
 
 
