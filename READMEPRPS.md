@@ -84,6 +84,7 @@ $ git clone https://github.com/RenegadeAsturias/AngularV19CountrySPACursor.git
 cd src/app
 mkdir country
 cd country
+mkdir layouts
 mkdir components
 mkdir pages
 mkdir services
@@ -144,8 +145,38 @@ ng generate component by-capital-page --skip-tests --inline-style
 loadChildren: () => import('./country/country.routes')
 
 ****************************************************************** (13/07/2025)
-* continuar...
+* 108. Layout Componets
+* Vamos a crear una carpeta nueva en: src/app/country/layouts
+* Los layouts son:
+* Un layout no es más que otro componente común y corriente
+* que usualmente es utilizado para dar un estilo a todas las páginas hijas.
+* Los layouts serán componentes que lucen como páginas pero envuelven otras pantallas,
+* que básicamente es un componente que tiene un 'router-outlet' interno.
+
+* 1º-Creamos el componente: CountryLayout en scr/app/country/layout
+cd c:/proyectoscursor/AngularV19CountrySPACursor/src/app/country/layouts
+ng generate component CountryLayout --skip-tests --inline-style
+
+* 2º-En la clase Importamos el RouterOutlet
+@Component({
+  selector: 'app-country-layout',
+  imports: [RouterOutlet],  <<<<<<<<<<<<<<<---Importamos RouterOutlet
+  templateUrl: './country-layout.html',
+})
+export class CountryLayout {
+
+* 3º-En la plantilla añadimos el <router-outlet>
+p>country-layout works!</p>
+<router-outlet/> <<<<<<<<<<<<<<<---Utilizamos RouterOutlet
+
+****************************************************************** (14/07/2025)
+
+... continuar...
 
 
+
+******************************************************************
+
+// npm run git:all
 
 
