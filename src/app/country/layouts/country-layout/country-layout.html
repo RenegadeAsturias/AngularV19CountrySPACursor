@@ -1,8 +1,20 @@
-<p>Country Layout works!</p>
-<section class="bg-blue-500">
+<div class="country-layout">
+  <header class="country-header">
+    <h1>🌍 Aplicación de Países</h1>
+    <nav>
+      <a routerLink="/country/by-capital" class="btn btn-primary">Por Capital</a>
+      <a routerLink="/" class="btn btn-primary">Inicio</a>
+    </nav>
+  </header>
+
+  <main class="country-content">
     <router-outlet/>
-</section>
-<h3>Footer de Country Layout</h3>
+  </main>
+
+  <footer class="country-footer">
+    <p>&copy; 2025 - Aplicación de Países - Desarrollado con Angular</p>
+  </footer>
+</div>
 
 
 

@@ -1,0 +1,32 @@
+{
+  "window.restoreFullScreen": false,
+  "window.restoreWindows": "none",
+  "window.zoomLevel": 0,
+  "window.newWindowDimensions": "inherit",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.sideBar.location": "left",
+  "workbench.panel.opensMaximized": "never",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "shrink",
+  "editor.minimap.enabled": false,
+  "workbench.statusBar.visible": true,
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.angular": true
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
+}

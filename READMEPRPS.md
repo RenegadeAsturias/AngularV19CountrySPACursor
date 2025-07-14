@@ -196,6 +196,36 @@ export class HomePageComponent {
 * Construímos un enlace para navegar a la sección country:
 <button routerLink="/country" class="btn btn-primary">Empezar</button>
 
+****************************************************************** (15/07/2025)
+* Vamos a añadir un nuevo componente para añadir un footer
+* que queremos que sea común a toda la aplicación
+
+* 1º-Creamos el componente: FooterComponent en scr/app/shared/components
+cd c:/proyectoscursor/AngularV19CountrySPACursor/src/app/shared/components
+ng generate component FooterComponent --skip-tests --inline-style
+
+* Para que el footer salga a nivel global, en todas las rutas donde quiera que estén 
+* debe estar en el app.html quedaría así:
+<main class="m-auto flex-grow flex flex-col min-h-screen">
+  <router-outlet />
+  <div class="flex-1 flex-grow"></div>
+  <footer-component />
+</main>
+
+****************************************************************** (15/07/2025)
+* 110. Menú superior e iconos
+
+.... continuar...
+
+
+
+
+
+
+
+
+
+
 
 
 
