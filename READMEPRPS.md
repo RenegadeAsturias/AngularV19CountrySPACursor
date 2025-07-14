@@ -169,9 +169,45 @@ export class CountryLayout {
 p>country-layout works!</p>
 <router-outlet/> <<<<<<<<<<<<<<<---Utilizamos RouterOutlet
 
-****************************************************************** (14/07/2025)
+* De esta forma vamos a poder mostrar rutas hijas!
 
-... continuar...
+****************************************************************** (14/07/2025)
+* 4º Ahora en la clase country.routers.ts
+* construímos las páginas hijas de nuestros componentes de countries
+
+* Seguimos contruyendo la aplicación y vamos a uno de los recursos que nos ha dejado
+* https://daisyui.com/components/hero/
+* Y copiamos el html de la sección: Hero with overlay image
+* que nos servirá de landingPage y lo copiamos en la home-page.hmtl
+
+* Desde el botón empezar de la landingPage vamos a crear un enlace
+* desde el html de la home-page.component.html
+* 1º-En la clase: home-page.component.ts
+* importamos el RouterLink
+
+@Component({
+  selector: 'app-home-page',
+  imports: [RouterLink], <<<<<<<<<<<<----Importamos RouterLink
+  templateUrl: './home-page.html',
+})
+export class HomePageComponent {
+
+* 2º-En la platilla: home-page.component.hmtl
+* Construímos un enlace para navegar a la sección country:
+<button routerLink="/country" class="btn btn-primary">Empezar</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
